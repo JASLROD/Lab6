@@ -6,7 +6,7 @@
  */
 public class TriangleDriver {
     public static void main(String args[]) {
-        System.out.println("First Triangle");
+        System.out.println("\nFirst Triangle");
         System.out.println("--------------");
         Triangle triangle1 = new Triangle();
         triangle1.writeOutput();

@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * The {@code Triangle} class represents a geometric triangle with attributes 
  * for its name, base, and height. It includes methods to modify and retrieve 
@@ -51,7 +51,10 @@ public class Triangle
      * to print or display the state of the object to the console or another output stream.
      */
     public void writeOutput(){//+ writeOutput(): void
-
+        System.out.println("Triangle name is: " + name);
+        System.out.println("Triangle base is: " + base);
+        System.out.println("Triangle height is: " + height);
+        System.out.println("Triangle area is: %.2f" + getArea());
     }
 
     /**
@@ -61,6 +64,17 @@ public class Triangle
      * to gather input from the user or another input source.
      */
     public void readInput(){//+ readInput(): void
+        
+      System.out.print("What is the triangle's name: ");
+      Scanner keyboard = new Scanner (System.in);
+      name = keyboard.nextLine();
+      
+      System.out.print("What is the triangle's base: ");
+      base = keyboard.nextDouble();
+      
+      System.out.print("What is the triangle's height: ");
+      height = keyboard.nextDouble();
+      
     }
 
     /**

@@ -51,10 +51,10 @@ public class Triangle
      * to print or display the state of the object to the console or another output stream.
      */
     public void writeOutput(){//+ writeOutput(): void
-        System.out.println("Triangle name is: " + name);
+        System.out.println("\nTriangle name is: " + name);
         System.out.println("Triangle base is: " + base);
         System.out.println("Triangle height is: " + height);
-        System.out.println("Triangle area is: %.2f" + getArea());
+        System.out.printf("Triangle area is: %.1f\n\n", getArea());
     }
 
     /**
